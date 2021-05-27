@@ -1,0 +1,48 @@
+.hi {
+    background-color: darkblue;
+    height: 200px;
+    width: 200px;
+    transition: background-color 1s ease-in, border-radius 1s;
+    transform: rotatex(80deg);
+    transform: rotatey(50deg);
+    transform: rotatez(70deg);
+    transform: rotate3d(90deg);
+}
+
+img {
+    transform: rotate3d(90deg);
+    transform: rotatez(70deg);
+    transform: rotatex(80deg);
+    transform: rotatey(50deg);
+}
+
+.hi:hover {
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+section div {
+    height: 50px;
+    width: 50px;
+    margin: 20px 0;
+    background-color: black;
+    transition: 1s;
+}
+
+section:hover div {
+    margin-left: 100px;
+}
+
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: step-end;
+}
